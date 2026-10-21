@@ -1,0 +1,53 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11091e"/>
+      <stop offset="100%" stop-color="#1f1136"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#bg6)"/>
+  
+  <g transform="translate(60, 45)">
+    <!-- Library UI Screen -->
+    <rect width="480" height="280" rx="14" fill="#130a21" stroke="#8750f7" stroke-width="1.5"/>
+    <rect width="480" height="34" rx="14" fill="#1d0f33"/>
+    <circle cx="20" cy="17" r="4.5" fill="#ef4444"/>
+    <circle cx="34" cy="17" r="4.5" fill="#f59e0b"/>
+    <circle cx="48" cy="17" r="4.5" fill="#10b981"/>
+    <text x="240" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c4b5fd" text-anchor="middle">Bibliothèque Numérique • TypeScript &amp; Java</text>
+
+    <!-- Books shelf showcase -->
+    <g transform="translate(30, 60)">
+      <!-- Book 1 -->
+      <rect x="0" y="0" width="70" height="105" rx="6" fill="#8750f7"/>
+      <rect x="6" y="8" width="58" height="6" rx="2" fill="#ffffff" opacity="0.8"/>
+      <text x="35" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#ffffff" font-weight="bold" text-anchor="middle">Clean Code</text>
+
+      <!-- Book 2 -->
+      <rect x="85" y="10" width="70" height="95" rx="6" fill="#3b1f69" stroke="#8750f7"/>
+      <text x="120" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#e9d5ff" font-weight="bold" text-anchor="middle">Java EE</text>
+
+      <!-- Book 3 -->
+      <rect x="170" y="0" width="70" height="105" rx="6" fill="#6366f1"/>
+      <text x="205" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#ffffff" font-weight="bold" text-anchor="middle">TypeScript</text>
+
+      <!-- Book 4 -->
+      <rect x="255" y="15" width="70" height="90" rx="6" fill="#25143d" stroke="#4c268a"/>
+      <text x="290" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#c4b5fd" font-weight="bold" text-anchor="middle">Database</text>
+
+      <!-- Shelf line -->
+      <rect x="-10" y="108" width="440" height="6" rx="3" fill="#371d5e"/>
+    </g>
+
+    <!-- Statistics & Management controls below -->
+    <g transform="translate(30, 190)">
+      <rect x="0" y="0" width="200" height="60" rx="8" fill="#1b0f2e" stroke="#351a59"/>
+      <text x="15" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a78bfa" font-weight="600">Disponibilité du Catalogue</text>
+      <text x="15" y="47" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" fill="#10b981" font-weight="bold">94.8% Prêts Actifs</text>
+
+      <rect x="220" y="0" width="200" height="60" rx="8" fill="#1b0f2e" stroke="#351a59"/>
+      <text x="235" y="24" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a78bfa" font-weight="600">API &amp; Recherche Instantanée</text>
+      <text x="235" y="47" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">&lt; 35ms Latence</text>
+    </g>
+  </g>
+</svg>

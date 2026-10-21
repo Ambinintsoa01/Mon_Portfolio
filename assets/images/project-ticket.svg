@@ -1,0 +1,52 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140b25"/>
+      <stop offset="100%" stop-color="#0a0513"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#bg5)"/>
+  
+  <g transform="translate(60, 45)">
+    <!-- Ticket Card Frame -->
+    <rect width="480" height="280" rx="16" fill="#180e2d" stroke="#8750f7" stroke-width="1.5"/>
+    <rect x="330" y="0" width="2" height="280" stroke="#3d2169" stroke-width="2" stroke-dasharray="6,6"/>
+
+    <!-- Left section -->
+    <rect x="30" y="30" width="60" height="22" rx="6" fill="#8750f7"/>
+    <text x="60" y="45" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#ffffff" font-weight="bold" text-anchor="middle">SMMEC</text>
+    <text x="100" y="46" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" fill="#ffffff" font-weight="bold">Système de Billetterie</text>
+    
+    <text x="30" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#9ca3af">Événement / Guichet :</text>
+    <text x="30" y="110" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" fill="#c4b5fd" font-weight="bold">Accès VIP &amp; Grand Public</text>
+
+    <rect x="30" y="135" width="120" height="40" rx="8" fill="#24143d"/>
+    <text x="40" y="152" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#9ca3af">Siège / Zone</text>
+    <text x="40" y="167" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#10b981" font-weight="bold">Bloc A - N° 42</text>
+
+    <rect x="170" y="135" width="120" height="40" rx="8" fill="#24143d"/>
+    <text x="180" y="152" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#9ca3af">Date &amp; Heure</text>
+    <text x="180" y="167" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" fill="#ffffff" font-weight="bold">Direct / Temps réel</text>
+
+    <rect x="30" y="195" width="260" height="55" rx="10" fill="#11091f" stroke="#311954"/>
+    <text x="45" y="218" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a78bfa" font-weight="600">Architecture Hybride</text>
+    <text x="45" y="235" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#6b7280">Python Backend • Dart Frontend • Validation instantanée</text>
+
+    <!-- Right section (Stub & QR Code) -->
+    <rect x="355" y="35" width="95" height="95" rx="8" fill="#ffffff"/>
+    <!-- Mock QR pixels -->
+    <rect x="365" y="45" width="22" height="22" fill="#000000"/>
+    <rect x="418" y="45" width="22" height="22" fill="#000000"/>
+    <rect x="365" y="98" width="22" height="22" fill="#000000"/>
+    <rect x="395" y="55" width="10" height="10" fill="#000000"/>
+    <rect x="395" y="75" width="15" height="15" fill="#000000"/>
+    <rect x="420" y="98" width="15" height="15" fill="#000000"/>
+    <rect x="370" y="50" width="12" height="12" fill="#ffffff"/>
+    <rect x="423" y="50" width="12" height="12" fill="#ffffff"/>
+    <rect x="370" y="103" width="12" height="12" fill="#ffffff"/>
+
+    <text x="402" y="160" font-family="Consolas, monospace" font-size="11" fill="#c4b5fd" text-anchor="middle">#TKT-2026</text>
+    <rect x="355" y="180" width="95" height="24" rx="6" fill="#8750f7"/>
+    <text x="402" y="196" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#ffffff" font-weight="bold" text-anchor="middle">VALIDÉ</text>
+  </g>
+</svg>

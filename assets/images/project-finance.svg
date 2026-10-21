@@ -1,0 +1,57 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140a24"/>
+      <stop offset="100%" stop-color="#07030e"/>
+    </linearGradient>
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8750f7"/>
+      <stop offset="100%" stop-color="#381b6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#bg2)"/>
+  <circle cx="300" cy="180" r="180" fill="#8750f7" opacity="0.1" filter="blur(30px)"/>
+  
+  <g transform="translate(60, 40)">
+    <!-- App Phone Frame Mockup -->
+    <rect x="230" y="10" width="220" height="280" rx="24" fill="#12081f" stroke="#8750f7" stroke-width="2"/>
+    <rect x="300" y="18" width="80" height="8" rx="4" fill="#25133d"/>
+    <!-- Screen content -->
+    <text x="250" y="55" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#a78bfa" font-weight="600">Balance Totale</text>
+    <text x="250" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" fill="#ffffff" font-weight="bold">Ar 12,450,000</text>
+    
+    <!-- Mini Card -->
+    <rect x="245" y="95" width="190" height="65" rx="12" fill="url(#violetGrad)"/>
+    <text x="260" y="118" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#e9d5ff">Budget Mensuel</text>
+    <text x="260" y="138" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" fill="#ffffff" font-weight="bold">78% Alloué</text>
+
+    <!-- Transactions list -->
+    <rect x="245" y="172" width="190" height="28" rx="8" fill="#1e1033"/>
+    <circle cx="260" cy="186" r="6" fill="#10b981"/>
+    <text x="274" y="190" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#e2e8f0">Entrée Salaire</text>
+    
+    <rect x="245" y="206" width="190" height="28" rx="8" fill="#1e1033"/>
+    <circle cx="260" cy="220" r="6" fill="#ef4444"/>
+    <text x="274" y="224" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#e2e8f0">Dépense Matériel</text>
+    
+    <rect x="245" y="240" width="190" height="28" rx="8" fill="#1e1033"/>
+    <circle cx="260" cy="254" r="6" fill="#8750f7"/>
+    <text x="274" y="258" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#e2e8f0">Épargne Projet</text>
+
+    <!-- Side info block -->
+    <rect x="30" y="45" width="170" height="210" rx="16" fill="#180e2b" stroke="#381d61" stroke-width="1.5"/>
+    <circle cx="60" cy="80" r="16" fill="#8750f7" opacity="0.3"/>
+    <text x="60" y="86" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" fill="#a855f7" text-anchor="middle">⚡</text>
+    <text x="86" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#ffffff" font-weight="bold">Finance</text>
+    <text x="86" y="93" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#9ca3af">Flutter &amp; PLpgSQL</text>
+    
+    <rect x="46" y="115" width="138" height="6" rx="3" fill="#2d174d"/>
+    <rect x="46" y="115" width="95" height="6" rx="3" fill="#8750f7"/>
+    <text x="46" y="138" font-family="'Segoe UI', Roboto, sans-serif" font-size="9" fill="#c4b5fd">Cross-Platform Engine</text>
+    <text x="46" y="152" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#9ca3af">• Multi-devises</text>
+    <text x="46" y="165" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#9ca3af">• États comptables</text>
+    <text x="46" y="178" font-family="'Segoe UI', Roboto, sans-serif" font-size="8" fill="#9ca3af">• Base de données SQL</text>
+    <rect x="46" y="195" width="138" height="28" rx="6" fill="#8750f7"/>
+    <text x="115" y="213" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#ffffff" font-weight="bold" text-anchor="middle">Dashboard Live</text>
+  </g>
+</svg>

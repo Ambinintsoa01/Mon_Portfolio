@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0717"/>
+      <stop offset="100%" stop-color="#1c0f33"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="380" fill="url(#bg4)"/>
+  
+  <g transform="translate(50, 40)">
+    <!-- Terminal window -->
+    <rect width="500" height="290" rx="14" fill="#0d0617" stroke="#8750f7" stroke-width="1.5"/>
+    <rect width="500" height="32" rx="14" fill="#1b0e30"/>
+    <rect y="24" width="500" height="8" fill="#1b0e30"/>
+    <circle cx="18" cy="16" r="4.5" fill="#ef4444"/>
+    <circle cx="32" cy="16" r="4.5" fill="#f59e0b"/>
+    <circle cx="46" cy="16" r="4.5" fill="#10b981"/>
+    <text x="250" y="20" font-family="Consolas, monospace" font-size="10" fill="#a78bfa" text-anchor="middle">python3 wav_analyzer.py --binary-inspect</text>
+
+    <!-- Terminal binary stream -->
+    <text x="25" y="65" font-family="Consolas, monospace" font-size="11" fill="#8750f7">&gt; RIFF Header [52 49 46 46] : Valid WAV File</text>
+    <text x="25" y="85" font-family="Consolas, monospace" font-size="11" fill="#c4b5fd">&gt; Channels: 2 (Stereo) | SampleRate: 44100 Hz | Bits: 16-bit PCM</text>
+    <text x="25" y="105" font-family="Consolas, monospace" font-size="11" fill="#10b981">&gt; ByteRate: 176400 bytes/sec | Subchunk2Size: 35,280,000 bytes</text>
+
+    <!-- Audio Waveform Visualization -->
+    <g transform="translate(30, 130)">
+      <rect width="440" height="110" rx="8" fill="#140a24" stroke="#2e174e"/>
+      <!-- Wave bars -->
+      <path d="M 10 55 Q 30 10, 50 55 T 90 55 T 130 55 T 170 55 T 210 55 T 250 55 T 290 55 T 330 55 T 370 55 T 410 55 T 430 55" fill="none" stroke="#4c268a" stroke-width="2"/>
+      <path d="M 10 55 Q 25 15, 40 55 Q 60 95, 80 55 Q 100 20, 120 55 Q 145 90, 170 55 Q 195 5, 220 55 Q 245 100, 270 55 Q 295 15, 320 55 Q 350 85, 380 55 Q 405 25, 430 55" fill="none" stroke="#a855f7" stroke-width="2.5"/>
+      <text x="220" y="100" font-family="Consolas, monospace" font-size="10" fill="#9ca3af" text-anchor="middle">PCM Bitstream &amp; Frequency Domain Processing</text>
+    </g>
+
+    <text x="25" y="270" font-family="Consolas, monospace" font-size="11" fill="#67e8f9">✓ Synthesis &amp; Low-level Audio Processing Complete [Status: OK]</text>
+  </g>
+</svg>

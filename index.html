@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ambinintsoa RAKOTOARISEDY | Développeur Full-Stack & Ingénieur Logiciel</title>
+  <meta name="description" content="Portfolio professionnel de Ambinintsoa RAKOTOARISEDY - Développeur Full-Stack, Flutter, Java, PostgreSQL, Vue.js et ingénierie logicielle. Découvrez mes projets et compétences.">
+  <meta name="author" content="Ambinintsoa RAKOTOARISEDY">
+
+  <!-- Google Fonts: Sora & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%238750f7'/><text x='50' y='68' font-size='55' font-family='sans-serif' font-weight='900' fill='white' text-anchor='middle'>A</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient glowing backdrop blobs -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" aria-label="Accueil Ambinintsoa">
+        <div class="logo-badge">A</div>
+        <div class="logo-text">Ambinintsoa<span>.</span></div>
+      </a>
+
+      <!-- Quick Email Capsule -->
+      <a href="mailto:rakotoarisedyambinintsoa@gmail.com" class="email-pill">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>rakotoarisedyambinintsoa@gmail.com</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#works" class="nav-link">Projets</a>
+        <a href="#resume" class="nav-link">Parcours</a>
+        <a href="#skills" class="nav-link">Compétences</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Switch Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Basculer entre thème clair et sombre" title="Changer le thème">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="nav-cta-btn">
+          <span>Me contacter</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-toggle-btn" aria-label="Ouvrir le menu de navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav">
+    <div class="mobile-nav-header">
+      <div class="logo">
+        <div class="logo-badge">A</div>
+        <div class="logo-text">Ambinintsoa<span>.</span></div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <button id="mobile-theme-toggle" class="theme-toggle-btn" aria-label="Basculer thème mobile">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-close-btn" aria-label="Fermer le menu">&times;</button>
+      </div>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#hero">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#works">Mes Projets</a>
+      <a href="#resume">Mon Parcours</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color); display: flex; flex-direction: column; gap: 0.75rem;">
+      <a href="https://github.com/Ambinintsoa01" target="_blank" rel="noopener noreferrer" class="btn-github" style="width: 100%; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span>GitHub @Ambinintsoa01</span>
+      </a>
+      <a href="mailto:rakotoarisedyambinintsoa@gmail.com" class="btn-primary" style="width: 100%; justify-content: center; padding: 0.75rem 1rem;">
+        <span>Écrire un email</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Frameless Portrait Blended Seamlessly Into Background)
+         ========================================================================== -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <div class="hero-intro-badge">
+              <span class="status-dot"></span>
+              <span>Disponible pour opportunités & projets</span>
+            </div>
+
+            <!-- Optimized Hero Heading (Clean flex separation, no text collision) -->
+            <h1 class="hero-title">
+              <span class="hero-greeting">Je suis Ambinintsoa</span>
+              <span class="hero-role gradient-text">Développeur Full-Stack &amp; Ingénieur Logiciel</span>
+            </h1>
+
+            <p class="hero-description">
+              Étudiant ingénieur à l'ITU (IT University, Madagascar) et passionné par l'architecture logicielle. Je conçois des solutions digitales de bout en bout : applications mobiles & desktop multiplateformes en <strong>Flutter/Dart</strong>, architectures backend performantes en <strong>Java</strong>, <strong>PostgreSQL</strong> et <strong>Python</strong>, ainsi que des interfaces web modernes et réactives.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary">
+                <span>Discuter d'un projet</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <!-- Social Links -->
+              <div class="social-links">
+                <a href="https://github.com/Ambinintsoa01" target="_blank" rel="noopener noreferrer" class="social-btn" title="Consulter mon GitHub (Ambinintsoa01)">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="mailto:rakotoarisedyambinintsoa@gmail.com" class="social-btn" title="Envoyer un email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/Ambinintsoa01" target="_blank" rel="noopener noreferrer" class="social-btn" title="Réseau professionnel">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Portrait: Frameless, Blended into background, Unobstructed -->
+          <div class="hero-image-wrapper">
+            <div class="hero-portrait-blend-container">
+              <!-- Soft atmospheric radial glow behind portrait -->
+              <div class="hero-portrait-ambient-glow"></div>
+              
+              <!-- Clean transparent portrait blending into background -->
+              <img src="assets/images/profile-blended.png" alt="Ambinintsoa RAKOTOARISEDY" class="hero-portrait-blended-img" loading="eager">
+
+              <!-- Desktop floating tech badges -->
+              <div class="floating-badge floating-badge-top">
+                <span style="color: var(--primary);">⚡</span>
+                <span>Full-Stack & Flutter</span>
+              </div>
+              <div class="floating-badge floating-badge-bottom">
+                <span>🎓</span>
+                <span>ITU Madagascar</span>
+              </div>
+            </div>
+
+            <!-- Mobile Pills (Cleanly placed below portrait, no obstruction) -->
+            <div class="hero-mobile-badges">
+              <span class="hero-mobile-badge"><span style="color: var(--primary);">⚡</span> Full-Stack & Flutter</span>
+              <span class="hero-mobile-badge"><span>🎓</span> ITU Madagascar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         STATS COUNTER SECTION (Clean cards on mobile)
+         ========================================================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="24" data-suffix="+">24+</div>
+            <div class="stat-label">Dépôts Publics<br>sur GitHub</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="15" data-suffix="+">15+</div>
+            <div class="stat-label">Applications &<br>Systèmes Conçus</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="4" data-suffix="+">4+</div>
+            <div class="stat-label">Années d'Ingénierie<br>& Programmation</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label">Code Rigoureux<br>& Maintenable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SECTION (Optimized Header + Body layout for mobile)
+         ========================================================================== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mes Spécialités</span>
+          <h2 class="section-title">Mes Services de Qualité</h2>
+          <p class="section-desc">
+            De la réflexion architecturale jusqu'à l'implémentation et au déploiement, j'apporte une expertise technique complète pour donner vie à vos projets logiciels.
+          </p>
+        </div>
+
+        <div class="services-list">
+          <!-- Service 1 -->
+          <div class="service-card" onclick="location.href='#works'">
+            <div class="service-card-topbar">
+              <div class="service-num">01</div>
+              <div class="service-icon-btn">↗</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Développement Multiplateforme (Flutter & Dart)</h3>
+              <p class="service-desc">
+                Conception d'applications mobiles (iOS, Android) et desktop (Windows, macOS, Linux) fluides, performantes et natives à partir d'une codebase unique. Gestion d'état rigoureuse, intégration d'APIs et interfaces élégantes.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Flutter</span>
+                <span class="service-tag-item">Dart</span>
+                <span class="service-tag-item">Cross-Platform</span>
+                <span class="service-tag-item">Offline-First</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" onclick="location.href='#works'">
+            <div class="service-card-topbar">
+              <div class="service-num">02</div>
+              <div class="service-icon-btn">↗</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Backend Robuste & Architecture de Données</h3>
+              <p class="service-desc">
+                Développement d'APIs RESTful sécurisées et scalables avec Java (Spring Boot / Jakarta EE), PHP et Python. Modélisation de bases de données relationnelles complexes, procédures stockées en PL/pgSQL et optimisation des temps de réponse.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Java Spring Boot</span>
+                <span class="service-tag-item">PostgreSQL / PLpgSQL</span>
+                <span class="service-tag-item">REST APIs</span>
+                <span class="service-tag-item">Architecture MVC</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" onclick="location.href='#works'">
+            <div class="service-card-topbar">
+              <div class="service-num">03</div>
+              <div class="service-icon-btn">↗</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Développement Web Réactif & Frontend Moderne</h3>
+              <p class="service-desc">
+                Création de Single Page Applications (SPA) ergonomiques et intuitives avec Vue.js, TypeScript et CSS moderne. Typage strict pour minimiser les anomalies et intégration d'interfaces hautement réactives.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Vue.js</span>
+                <span class="service-tag-item">TypeScript</span>
+                <span class="service-tag-item">JavaScript ES6+</span>
+                <span class="service-tag-item">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" onclick="location.href='#works'">
+            <div class="service-card-topbar">
+              <div class="service-num">04</div>
+              <div class="service-icon-btn">↗</div>
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Cloud, DevOps & Ingénierie Logicielle Bas Niveau</h3>
+              <p class="service-desc">
+                Conteneurisation d'applications avec Docker, pipelines d'intégration continue, manipulations de fichiers et données binaires bas niveau (formats audio WAV, flux multimédia) et déploiement cloud.
+              </p>
+              <div class="service-tags">
+                <span class="service-tag-item">Docker</span>
+                <span class="service-tag-item">Cloud & Microservices</span>
+                <span class="service-tag-item">Manipulation Binaire Python</span>
+                <span class="service-tag-item">Git & CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WORKS / PROJECTS SECTION (Clean 2-row wrap filter for mobile)
+         ========================================================================== -->
+    <section id="works" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio & GitHub</span>
+          <h2 class="section-title">Mes Projets Récents</h2>
+          <p class="section-desc">
+            Sélection des projets les plus pertinents issus de mon profil GitHub, illustrant ma capacité à architecturer des solutions logicielles complètes, du mobile au cloud.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="projects-filter-wrapper">
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Tous les projets</button>
+            <button class="filter-btn" data-filter="flutter">Flutter & Mobile</button>
+            <button class="filter-btn" data-filter="web">Full-Stack & Web</button>
+            <button class="filter-btn" data-filter="cloud">Cloud & Systèmes</button>
+            <button class="filter-btn" data-filter="systems">Audio & Algorithmes</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Perso_achat_vente_stock-standard- -->
+          <article class="project-card" data-category="flutter web" data-project-id="perso-stock">
+            <div class="project-preview">
+              <img src="assets/images/project-stock.svg" alt="Gestion Achat Vente et Stock" loading="lazy">
+              <span class="project-category-badge">Flutter & PLpgSQL</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/Perso_achat_vente_stock-standard-" target="_blank" rel="noopener noreferrer">
+                  Gestion Commerciale & Stock
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Application multiplateforme (Desktop & Mobile) complète de gestion d'achats, de ventes, facturation et approvisionnement des stocks avec base relationnelle haute performance.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">PLpgSQL</span>
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/Perso_achat_vente_stock-standard-" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="perso-stock">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Finance_managment -->
+          <article class="project-card" data-category="flutter" data-project-id="finance-mgmt">
+            <div class="project-preview">
+              <img src="assets/images/project-finance.svg" alt="Finance Management" loading="lazy">
+              <span class="project-category-badge">FinTech & Flutter</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/Finance_managment" target="_blank" rel="noopener noreferrer">
+                  Système de Gestion Financière
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Plateforme d'analyse budgétaire cross-platform avec visualisation dynamique des flux financiers, calcul de bilans comptables et contrôle des dépenses.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">PLpgSQL</span>
+                <span class="tech-tag">Swift/Kotlin</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/Finance_managment" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="finance-mgmt">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Projet_cloud -->
+          <article class="project-card" data-category="cloud web" data-project-id="projet-cloud">
+            <div class="project-preview">
+              <img src="assets/images/project-cloud.svg" alt="Plateforme Cloud" loading="lazy">
+              <span class="project-category-badge">Cloud & Microservices</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/Projet_cloud" target="_blank" rel="noopener noreferrer">
+                  Plateforme Cloud & Microservices
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Architecture cloud-native associant une SPA réactive en Vue.js, un serveur backend résilient en Java et une conteneurisation complète sous Docker.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/Projet_cloud" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="projet-cloud">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: SMMEC_billeterie -->
+          <article class="project-card" data-category="web flutter" data-project-id="smmec-ticketing">
+            <div class="project-preview">
+              <img src="assets/images/project-ticket.svg" alt="Billetterie SMMEC" loading="lazy">
+              <span class="project-category-badge">Billetterie & QR Code</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/SMMEC_billeterie" target="_blank" rel="noopener noreferrer">
+                  Billetterie SMMEC & Guichet
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Système intégré d'émission et de validation de billets événementiels avec génération de tickets sécurisés par QR code et contrôle d'accès en direct.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/SMMEC_billeterie" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="smmec-ticketing">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: WAV_project -->
+          <article class="project-card" data-category="systems" data-project-id="wav-project">
+            <div class="project-preview">
+              <img src="assets/images/project-wav.svg" alt="WAV Binary Engine" loading="lazy">
+              <span class="project-category-badge">Audio & Binaire</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/WAV_project" target="_blank" rel="noopener noreferrer">
+                  Analyseur & Moteur Audio WAV
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Ingénierie logicielle bas niveau dédiée au décodage binaire des en-têtes RIFF, à la manipulation d'échantillons PCM et au traitement du signal en Python.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Binary Manipulation</span>
+                <span class="tech-tag">PCM Audio</span>
+                <span class="tech-tag">Algorithmique</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/WAV_project" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="wav-project">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Bibliotheque -->
+          <article class="project-card" data-category="web" data-project-id="bibliotheque">
+            <div class="project-preview">
+              <img src="assets/images/project-library.svg" alt="Bibliothèque Numérique" loading="lazy">
+              <span class="project-category-badge">TypeScript & Java</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/Bibliotheque" target="_blank" rel="noopener noreferrer">
+                  Gestion de Bibliothèque Numérique
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Système de gestion de catalogue d'ouvrages, réservations et gestion d'adhérents avec typage strict TypeScript et architecture backend Java découplée.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/Bibliotheque" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="bibliotheque">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 7: My_Spotify_S6 -->
+          <article class="project-card" data-category="systems web" data-project-id="spotify-music">
+            <div class="project-preview">
+              <img src="assets/images/project-spotify.svg" alt="Streaming Audio MP3" loading="lazy">
+              <span class="project-category-badge">Multimédia & Streaming</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/My_Spotify_S6" target="_blank" rel="noopener noreferrer">
+                  Lecteur & Streaming Audio MP3
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Plateforme de chargement, d'indexation et de lecture audio avec streaming continu par fragments, gestion des métadonnées et playlists dynamiques.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">HTML5 Audio</span>
+                <span class="tech-tag">Buffer Engine</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/My_Spotify_S6" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="spotify-music">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 8: GLPI_NewApp -->
+          <article class="project-card" data-category="web" data-project-id="glpi-newapp">
+            <div class="project-preview">
+              <img src="assets/images/project-itsm.svg" alt="ITSM Helpdesk" loading="lazy">
+              <span class="project-category-badge">ITSM & IT University</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/GLPI_NewApp" target="_blank" rel="noopener noreferrer">
+                  GLPI NewApp - ITSM & Ticketing
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Système complet de support informatique d'entreprise, gestion des incidents informatiques, suivi des actifs matériels et respect des SLA (Évaluation ITU 2026).
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">ITIL Workflow</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/GLPI_NewApp" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="glpi-newapp">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 9: SI---Budget-CRM -->
+          <article class="project-card" data-category="web" data-project-id="budget-crm">
+            <div class="project-preview">
+              <img src="assets/images/project-crm.svg" alt="Budget CRM" loading="lazy">
+              <span class="project-category-badge">ERP Budgétaire & CRM</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">
+                <a href="https://github.com/Ambinintsoa01/SI---Budget-CRM" target="_blank" rel="noopener noreferrer">
+                  SI Budget & Portail CRM
+                </a>
+                <span class="project-arrow-icon">↗</span>
+              </h3>
+              <p class="project-desc">
+                Outil d'administration budgétaire et de relation client unifié. Rapprochement financier, ventilation par centre de charges et reporting analytique.
+              </p>
+              <div class="project-techs">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/Ambinintsoa01/SI---Budget-CRM" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Code GitHub</span>
+                </a>
+                <button class="btn-details" data-project="budget-crm">Détails techniques →</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- GitHub Profile Banner -->
+        <div class="github-banner">
+          <div class="github-banner-content">
+            <h3 class="gradient-text">Envie d'explorer davantage de code ?</h3>
+            <p>Retrouvez l'ensemble de mes 24 dépôts, commits et architectures logicielles sur mon profil public GitHub.</p>
+          </div>
+          <a href="https://github.com/Ambinintsoa01" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>Voir mon GitHub (@Ambinintsoa01)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         RESUME / EXPERIENCE & EDUCATION SECTION
+         ========================================================================== -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Parcours & Expérience</span>
+          <h2 class="section-title">Mon Expérience & Ma Formation</h2>
+          <p class="section-desc">
+            Une combinaison d'excellence académique à l'ITU et de projets d'ingénierie appliquée pour concevoir des logiciels durables et fiables.
+          </p>
+        </div>
+
+        <div class="resume-grid">
+          <!-- Column 1: Experience -->
+          <div class="resume-column">
+            <div class="resume-column-header">
+              <div class="resume-column-icon">💼</div>
+              <h3 class="resume-column-title">Mon Expérience</h3>
+            </div>
+
+            <div class="timeline">
+              <!-- Item 1 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2024 - Présent</div>
+                <h4 class="timeline-title">Développeur Full-Stack & Concepteur Logiciel</h4>
+                <div class="timeline-institution">Freelance & Projets Avancés</div>
+                <p class="timeline-desc">
+                  Conception d'architectures complètes pour des applications multiplateformes en Flutter (gestion commerciale, ERP stock, finance) et intégration de backends Java/PostgreSQL hautement disponibles.
+                </p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2023 - 2024</div>
+                <h4 class="timeline-title">Développeur Applicatif & Cloud</h4>
+                <div class="timeline-institution">Projets d'Ingénierie Informatique</div>
+                <p class="timeline-desc">
+                  Mise en place de solutions distribuées en conteneurs Docker, APIs RESTful en Java et frontend réactif avec Vue.js. Automatisation de billetteries électroniques avec QR code.
+                </p>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2022 - 2023</div>
+                <h4 class="timeline-title">Développeur Web & Systèmes de Données</h4>
+                <div class="timeline-institution">Projets Académiques & PME</div>
+                <p class="timeline-desc">
+                  Création de systèmes de gestion budgétaire, CRM d'entreprise, modélisation de bases relationnelles SQL et écriture de procédures stockées PL/pgSQL complexes.
+                </p>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2021 - 2022</div>
+                <h4 class="timeline-title">Ingénierie Bas Niveau & Multimédia</h4>
+                <div class="timeline-institution">Recherche & Pratique Personnelle</div>
+                <p class="timeline-desc">
+                  Décodage de paquets binaires bruts en Python (manipulation de la spécification WAV RIFF, signaux acoustiques PCM), streaming HTTP audio et traitement algorithmique.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Education -->
+          <div class="resume-column">
+            <div class="resume-column-header">
+              <div class="resume-column-icon">🎓</div>
+              <h3 class="resume-column-title">Ma Formation</h3>
+            </div>
+
+            <div class="timeline">
+              <!-- Edu 1 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2022 - 2026</div>
+                <h4 class="timeline-title">Cursus Ingénieur en Informatique</h4>
+                <div class="timeline-institution">IT University (ITU) - Madagascar</div>
+                <p class="timeline-desc">
+                  Formation d'excellence axée sur le génie logiciel, la conception orientée objet, les structures de données avancées, les architectures cloud, la sécurité des SI et le management de projets agiles.
+                </p>
+              </div>
+
+              <!-- Edu 2 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2023 - 2025</div>
+                <h4 class="timeline-title">Spécialisation Flutter, Java EE & Architecture Cloud</h4>
+                <div class="timeline-institution">Certifications & Modules Avancés ITU</div>
+                <p class="timeline-desc">
+                  Approfondissement des frameworks modernes : Flutter/Dart pour le cross-platform, Spring Boot pour les microservices, Docker pour la conteneurisation et PostgreSQL pour l'intégrité des données.
+                </p>
+              </div>
+
+              <!-- Edu 3 -->
+              <div class="timeline-card">
+                <div class="timeline-period">2021 - 2022</div>
+                <h4 class="timeline-title">Algorithmique, Mathématiques & Systèmes</h4>
+                <div class="timeline-institution">Bases Scientifiques & Fondamentaux</div>
+                <p class="timeline-desc">
+                  Maîtrise des algorithmes fondamentaux de tri, de recherche, de graphes, de calcul matriciel et de manipulation de mémoire bas niveau (C, Python, logique booléenne).
+                </p>
+              </div>
+
+              <!-- Edu 4 -->
+              <div class="timeline-card">
+                <div class="timeline-period">En continu</div>
+                <h4 class="timeline-title">Veille Technologique & Clean Code</h4>
+                <div class="timeline-institution">Auto-formation & Open Source</div>
+                <p class="timeline-desc">
+                  Application rigoureuse des principes SOLID, Clean Architecture, Design Patterns du Gang of Four et perfectionnement continu sur les nouvelles versions des langages et frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Expertises Techniques</span>
+          <h2 class="section-title">Mes Compétences Clés</h2>
+          <p class="section-desc">
+            Technologies, langages et environnements que j'utilise au quotidien pour concevoir des logiciels robustes et pérennes.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: Flutter / Dart -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M14.314 0L2.3 12 6 15.7 21.684 0h-7.37zM6.02 15.703l3.693 3.693L21.684 7.425h-7.37L6.02 15.703zm7.697 7.697l3.694-3.694 4.273 4.273v.021h-7.967z"/></svg>
+            </div>
+            <div class="skill-percentage">92%</div>
+            <div class="skill-name">Flutter & Dart</div>
+          </div>
+
+          <!-- Skill 2: Java Spring -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.64-4.899 2.34-11.205-.133-6.943-1.143zm-1.036-3.713s-1.107.747.534.96c2.279.297 4.175.275 7.687-.417 0 0 .393.36 1.05.6-5.836 2.012-13.064.29-9.271-1.143zm10.741 2.37c-.77.19-1.57.34-2.39.46.68-.42 1.25-.94 1.68-1.54.43-.6.67-1.28.71-2.01.04-.73-.12-1.46-.47-2.13-.35-.67-.88-1.23-1.54-1.63-.66-.4-1.43-.63-2.22-.67-.79-.04-1.57.11-2.27.44-.7.33-1.29.83-1.72 1.45-.43.62-.67 1.34-.69 2.11-.02.77.16 1.52.54 2.18.38.66.93 1.19 1.62 1.57.69.38 1.48.58 2.29.58.26 0 .52-.02.78-.06.77-.12 1.53-.35 2.26-.69.21-.1.43-.19.63-.29z"/></svg>
+            </div>
+            <div class="skill-percentage">88%</div>
+            <div class="skill-name">Java & Spring</div>
+          </div>
+
+          <!-- Skill 3: PostgreSQL / PLpgSQL -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div class="skill-percentage">90%</div>
+            <div class="skill-name">PostgreSQL & SQL</div>
+          </div>
+
+          <!-- Skill 4: Vue.js -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M2 3h3.5L12 14.5 18.5 3H22L12 21 2 3zm4.5 0h3L12 7.5 14.5 3h3L12 12 6.5 3z"/></svg>
+            </div>
+            <div class="skill-percentage">85%</div>
+            <div class="skill-name">Vue.js SPA</div>
+          </div>
+
+          <!-- Skill 5: TypeScript -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0H1.125zM12 7.75h6v2.5h-1.75v6h-2.5v-6H12v-2.5zm-5.75 2.5h2.5c.69 0 1.25.56 1.25 1.25v.75c0 .69-.56 1.25-1.25 1.25h-1.25v2.75h-2.5v-6h1.25z"/></svg>
+            </div>
+            <div class="skill-percentage">86%</div>
+            <div class="skill-name">TypeScript & JS</div>
+          </div>
+
+          <!-- Skill 6: Python -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.006 2.75h5.82v.828H3.852S0 5.79 0 11.906c0 6.117 3.375 5.906 3.375 5.906h2.012v-2.828s-.11-3.375 3.316-3.375h5.688s3.207.055 3.207-3.207V3.207S17.988 0 11.914 0zm-3.21 1.836a1.18 1.18 0 1 1 0 2.36 1.18 1.18 0 0 1 0-2.36zm3.382 22.164c6.094 0 5.715-2.656 5.715-2.656l-.006-2.75h-5.82v-.828h8.172s3.852.445 3.852-5.672c0-6.117-3.375-5.906-3.375-5.906h-2.012v2.828s.11 3.375-3.316 3.375H8.598s-3.207-.055-3.207 3.207v5.188s-.398 3.207 5.676 3.207zm3.21-1.836a1.18 1.18 0 1 1 0-2.36 1.18 1.18 0 0 1 0 2.36z"/></svg>
+            </div>
+            <div class="skill-percentage">85%</div>
+            <div class="skill-name">Python Audio & Data</div>
+          </div>
+
+          <!-- Skill 7: Docker & Cloud -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 0 0 .186-.186V6.29a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.929 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186h-2.12a.185.185 0 0 0-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186H5.136a.186.186 0 0 0-.186.185v1.888c0 .102.084.185.186.185m-2.928 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186H2.208a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185"/></svg>
+            </div>
+            <div class="skill-percentage">80%</div>
+            <div class="skill-name">Docker & Conteneurs</div>
+          </div>
+
+          <!-- Skill 8: PHP / Symfony -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5h-2v-9h2v9zm4 0h-2v-9h2v9z"/></svg>
+            </div>
+            <div class="skill-percentage">85%</div>
+            <div class="skill-name">PHP & Web MVC</div>
+          </div>
+
+          <!-- Skill 9: Git & CI/CD -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div class="skill-percentage">92%</div>
+            <div class="skill-name">Git & GitHub</div>
+          </div>
+
+          <!-- Skill 10: C/C++ & Bas Niveau -->
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.8L19.5 19h-15L12 5.8zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+            </div>
+            <div class="skill-percentage">78%</div>
+            <div class="skill-name">C++ & CMake</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VALUES / WHY WORK TOGETHER SECTION
+         ========================================================================== -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">💎</div>
+            <h3 class="value-title">Architecture & Clean Code</h3>
+            <p class="value-desc">
+              Je privilégie la clarté du code, la séparation des couches (MVC, Clean Architecture) et la documentation pour garantir une maintenabilité et une évolutivité maximales de votre application.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🔄</div>
+            <h3 class="value-title">Polyvalence Front & Back</h3>
+            <p class="value-desc">
+              Capacité éprouvée à concevoir à la fois des interfaces soignées et réactives (Flutter, Vue.js) et des backends critiques capables de gérer de forts volumes de requêtes (Java, SQL).
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🚀</div>
+            <h3 class="value-title">Rigueur & Sens du Résultat</h3>
+            <p class="value-desc">
+              Habitué aux livraisons rapides, aux environnements exigeants et au respect strict des délais. Chaque projet est testé et validé avec un haut standard d'exigence technique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (Travaillons ensemble !)
+         ========================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Me Contacter</span>
+          <h2 class="section-title">Travaillons ensemble !</h2>
+          <p class="section-desc">
+            Vous avez une idée d'application mobile, un besoin en développement d'API, ou un projet d'entreprise à concrétiser ? Discutons-en dès aujourd'hui.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Form Left Column -->
+          <div class="contact-form-container">
+            <div class="contact-form-header">
+              <h3 class="contact-form-title gradient-text">Envoyez-moi un message</h3>
+              <p>Remplissez le formulaire ci-dessous et je vous répondrai dans les 24 heures.</p>
+            </div>
+
+            <form id="portfolio-contact-form">
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="name" class="form-label">Votre nom complet *</label>
+                  <input type="text" id="name" class="form-control" placeholder="ex. Jean Dupont" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Votre adresse email *</label>
+                  <input type="email" id="email" class="form-control" placeholder="ex. jean.dupont@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-row form-row-2">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Téléphone / WhatsApp</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="+261 ...">
+                </div>
+                <div class="form-group">
+                  <label for="service" class="form-label">Service concerné</label>
+                  <select id="service" class="form-control select-control">
+                    <option value="Application Mobile Flutter">Application Mobile / Flutter</option>
+                    <option value="Développement Backend & API">Backend Java / API REST / SQL</option>
+                    <option value="Application Web SPA (Vue.js)">Application Web / Vue.js</option>
+                    <option value="Architecture Cloud & DevOps">Architecture Cloud & DevOps</option>
+                    <option value="Autre projet sur mesure">Autre projet sur-mesure</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.5rem;">
+                <label for="message" class="form-label">Détails de votre projet *</label>
+                <textarea id="message" class="form-control" placeholder="Décrivez vos besoins, objectifs et délais envisagés..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Envoyer ma demande</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info Right Column -->
+          <div class="contact-info-list">
+            <!-- Email -->
+            <a href="mailto:rakotoarisedyambinintsoa@gmail.com" class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Email direct</div>
+                <div class="contact-info-val">rakotoarisedyambinintsoa@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Ambinintsoa01" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Profil GitHub</div>
+                <div class="contact-info-val">github.com/Ambinintsoa01</div>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label">Localisation & Mobilité</div>
+                <div class="contact-info-val">Antananarivo, Madagascar • Disponible en Full Remote</div>
+              </div>
+            </div>
+
+            <!-- Education Badge -->
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🎓</div>
+              <div>
+                <div class="contact-info-label">Institution</div>
+                <div class="contact-info-val">IT University (ITU Madagascar)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       MODAL: PROJECT DETAILS
+       ========================================================================== -->
+  <div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Fermer la fenêtre">&times;</button>
+      <div class="modal-header-img">
+        <img id="modal-img" src="" alt="Aperçu du projet">
+      </div>
+      <div class="modal-body">
+        <span id="modal-badge" class="project-category-badge" style="position: static; margin-bottom: 0.75rem; display: inline-block;"></span>
+        <h3 id="modal-title" class="modal-title gradient-text">Titre du Projet</h3>
+        <p id="modal-desc" class="modal-desc">Description détaillée...</p>
+
+        <div class="modal-highlights">
+          <h4>Points Clés & Architecture</h4>
+          <ul id="modal-highlights-list"></ul>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.6rem; color: var(--text-primary);">Stack Technique</h4>
+          <div id="modal-techs" class="project-techs"></div>
+        </div>
+
+        <div class="modal-footer">
+          <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.7rem 1.75rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>Accéder au code source sur GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="logo">
+          <div class="logo-badge">A</div>
+          <div class="logo-text">Ambinintsoa<span>.</span></div>
+        </a>
+        <div class="footer-nav">
+          <a href="#services">Services</a>
+          <a href="#works">Projets</a>
+          <a href="#resume">Parcours</a>
+          <a href="#skills">Compétences</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Ambinintsoa RAKOTOARISEDY. Tous droits réservés.
+        </div>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <a href="https://github.com/Ambinintsoa01" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);">GitHub</a>
+          <span>•</span>
+          <a href="mailto:rakotoarisedyambinintsoa@gmail.com" style="color: var(--text-secondary);">Email</a>
+          <span>•</span>
+          <span>Antananarivo, Madagascar</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Remonter en haut de page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-notice" class="toast-notice"></div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
